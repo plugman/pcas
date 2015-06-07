@@ -1,0 +1,64 @@
+# Originally written by James www.realisingdesigns.com
+# Tweaked by Al for ImeiUnlock 4.3.1 and above
+
+RULE_0_START:
+# set original URL
+set SCRATCH:ORIGINAL_URL = %{URL}
+# Set Root Relative Path 
+set SCRATCH:ROOT_REL = {VAL_ROOT_REL}
+# check for query string and set accordingly
+match URL into $ with ^(.*)\?(.*)$
+if matched then
+	set SCRATCH:QUERY_STRING = $2
+endif
+RULE_0_END:
+
+RULE_1_START:
+# check for Category e.g. /my-category/cat_3.html
+match URL into $ with /cat_([0-9]*)\.html
+if matched then
+	set SCRATCH:INV_ID = $1
+	set URL = %{SCRATCH:ROOT_REL}index.php?_a=viewCat&catId=%{SCRATCH:INV_ID}
+	goto RULE_2_START
+endif
+ 
+# check for Product e.g. /my-category/my-product/prod_3.html
+match URL into $ with /prod_([0-9]*)\.html
+if matched then
+	set SCRATCH:INV_ID = $1
+	set URL = %{SCRATCH:ROOT_REL}index.php?_a=viewProd&productId=%{SCRATCH:INV_ID}
+	goto RULE_2_START
+endif
+ 
+# check for Document e.g. /my-page/info_3.html
+match URL into $ with /info_([0-9]*)\.html
+if matched then
+	set SCRATCH:INV_ID = $1
+	set URL = %{SCRATCH:ROOT_REL}index.php?_a=viewDoc&docId=%{SCRATCH:INV_ID}
+	goto RULE_2_START
+endif
+ 
+# check for tell-a-friend e.g. /tellafriend/tell_3.html
+match URL into $ with /tell_([0-9]*)\.html
+if matched then
+	set SCRATCH:INV_ID = $1
+	set URL = %{SCRATCH:ROOT_REL}index.php?_a=tellafriend&productId=%{SCRATCH:INV_ID}
+	goto RULE_2_START
+endif
+ 
+# Check for Sale Items Category e.g. /saleitems/cat_saleItems.html
+match URL into $ with /saleitems/cat_saleItems.html
+if matched then
+	set URL = %{SCRATCH:ROOT_REL}index.php?_a=viewCat&catId=saleItems
+	goto RULE_2_START
+endif
+RULE_1_END:
+
+RULE_2_START:
+# Check for Query String and append if required
+match SCRATCH:ORIGINAL_URL into % with \?(.*)$
+if matched then
+	set URL = %{URL}&%{SCRATCH:QUERY_STRING}
+endif
+goto END
+RULE_2_END:

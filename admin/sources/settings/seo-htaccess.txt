@@ -1,0 +1,23 @@
+## Activate the mod_rewrite Engine
+
+RewriteEngine On
+
+RewriteCond %{QUERY_STRING} (.*)$
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule cat_([0-9]+)(\.[a-z]{3,4})?(.*)$	index.php?_a=viewCat&catId=$1&%1 [NC]
+
+RewriteCond %{QUERY_STRING} (.*)$
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule prod_([0-9]+)(\.[a-z]{3,4})?$		index.php?_a=viewProd&productId=$1&%1 [NC]
+
+RewriteCond %{QUERY_STRING} (.*)$
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule info_([0-9]+)(\.[a-z]{3,4})?$		index.php?_a=viewDoc&docId=$1&%1 [NC]
+
+RewriteCond %{QUERY_STRING} (.*)$
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule tell_([0-9]+)(\.[a-z]{3,4})?$		index.php?_a=tellafriend&productId=$1&%1 [NC]
+
+RewriteCond %{QUERY_STRING} (.*)$
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule _saleItems(\.[a-z]+)?(\?.*)?$		index.php?_a=viewCat&catId=saleItems&%1 [NC,L]

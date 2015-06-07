@@ -1,0 +1,1 @@
+[16-Sep-2013 02:16:08] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 76 bytes) in /home/faisal/public_html/admin/sources/dhru/api_files/dhrufusionapi.class.php on line 77

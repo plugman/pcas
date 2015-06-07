@@ -1,0 +1,10 @@
+[17-Jul-2014 01:06:49] PHP Warning:  array_keys() [<a href='function.array-keys'>function.array-keys</a>]: The first argument should be an array in /home4/faisal/public_html/webcreation.us/demo/photocase/ig/ajax.php on line 31
+[17-Jul-2014 01:06:49] PHP Warning:  Invalid argument supplied for foreach() in /home4/faisal/public_html/webcreation.us/demo/photocase/ig/ajax.php on line 32
+[21-Jul-2014 20:25:26] PHP Warning:  array_keys() [<a href='function.array-keys'>function.array-keys</a>]: The first argument should be an array in /home4/faisal/public_html/webcreation.us/demo/photocase/ig/ajax.php on line 31
+[21-Jul-2014 20:25:26] PHP Warning:  Invalid argument supplied for foreach() in /home4/faisal/public_html/webcreation.us/demo/photocase/ig/ajax.php on line 32
+[21-Jul-2014 20:35:34] PHP Warning:  array_keys() [<a href='function.array-keys'>function.array-keys</a>]: The first argument should be an array in /home4/faisal/public_html/webcreation.us/demo/photocase/ig/ajax.php on line 31
+[21-Jul-2014 20:35:34] PHP Warning:  Invalid argument supplied for foreach() in /home4/faisal/public_html/webcreation.us/demo/photocase/ig/ajax.php on line 32
+[21-Jul-2014 21:23:30] PHP Warning:  array_keys() [<a href='function.array-keys'>function.array-keys</a>]: The first argument should be an array in /home4/faisal/public_html/webcreation.us/demo/photocase/ig/ajax.php on line 31
+[21-Jul-2014 21:23:30] PHP Warning:  Invalid argument supplied for foreach() in /home4/faisal/public_html/webcreation.us/demo/photocase/ig/ajax.php on line 32
+[04-Sep-2014 13:52:50 America/Chicago] PHP Warning:  array_keys() expects parameter 1 to be array, null given in /home/photocas/public_html/ig/ajax.php on line 31
+[04-Sep-2014 13:52:50 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/photocas/public_html/ig/ajax.php on line 32

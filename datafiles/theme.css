@@ -1,0 +1,131 @@
+	.transform-tool-overlay {
+		position: fixed;
+		top: 0px;
+		left: 0px;
+		width: 100%;
+		height: 100%;
+		z-index: 51;
+		cursor: normal;
+		background: rgba(255,255,255,0.9);
+	}
+
+	.transform-tool-container {
+		display: inline-block;
+		position: absolute;
+		border: dotted 1px;
+		
+		cursor: move;
+		z-index: 101;
+	}
+
+	.transform-image {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		display: block;
+	}
+
+	.transform-handle {
+		width:14px;
+		height:14px;
+		background: rgba(0,0,0,0.2);
+		border: 1px solid rgba(0,0,0,0.7);
+		position: absolute;
+	}
+	.transform-handle:hover {
+		background: #5fc3c4;
+	}
+
+	.transform-handle-nw {
+		top: -7px;
+		left: -7px;
+		cursor: nw-resize;
+	}
+
+	.transform-handle-sw {
+		left: -7px;
+		bottom: -7px;
+		cursor: sw-resize;
+	}
+
+	.transform-handle-se {
+		bottom: -7px;
+		right: -7px;
+		cursor: se-resize;
+	}
+
+	.transform-handle-ne {
+		top: -7px;
+		right: -7px;
+		cursor: ne-resize;
+	}
+
+	.transform-holder {
+		border: solid 1px #666;
+		position: absolute;
+		display: inline-block;
+		z-index: 101;
+		pointer-events:none;
+	}
+	.draggable{
+    position: absolute;
+    z-index: 50;
+	overflow:hidden;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	}
+	.ui-resizable-handle {
+    position: absolute;
+    font-size: 0.1px;
+    display: block;
+	width:14px;
+		height:14px;
+		background: rgba(0,0,0,0.2);
+		border: 1px solid rgba(0,0,0,0.7);
+}
+.ui-resizable-disabled .ui-resizable-handle,
+.ui-resizable-autohide .ui-resizable-handle {
+    display: none;
+}
+
+.ui-resizable-se {
+    cursor: se-resize;
+    right: -7px;
+    bottom: -7px;
+}
+.ui-resizable-sw {
+    cursor: sw-resize;
+   
+    left: -7px;
+    bottom: -7px;
+}
+.ui-resizable-nw {
+    cursor: nw-resize;
+   
+    left: -7px;
+    top: -7px;
+}
+.ui-resizable-ne {
+    cursor: ne-resize;
+   
+    right: -7px;
+    top: -7px;
+}
+.maindiv{
+	position:relative;
+	overflow:hidden;
+	float:left;
+}
+.editable{
+	cursor:move;
+}
+.ui-wrapper{
+	overflow:visible !important;
+	z-index:51;
+	border:1px dotted #666;
+	}
+.imageloaded{
+	cursor:pointer;
+}

@@ -1,0 +1,83 @@
+/* DEFAULT CUBECART 3 ADMIN STYLE SHEET */
+.pinvoice{position:relative;
+		padding-top:5px;
+		padding-bottom:10px;}
+.pinvoicebg{position:absolute;
+		width:16px;
+		height:16px;
+		display:block;
+		background:url(../images/repair/slipbg.png) no-repeat left;
+		left:12px;
+		top:15px;
+}
+.dater{float:right;
+		background:url(../images/repair/datebag.png) no-repeat left top;
+		font-size:14px;
+		line-height:28px;
+		padding-left:33px;
+		}
+.dateo{color:#a02b99;}
+.tdTitle2{background:url(../images/repair/titlebg.jpg) repeat-x ;}
+
+.titlebox {
+	background:url(../images/repair/titleboxbg.jpg) repeat-x;
+    border: 1px solid #d9d9d9;
+	color:#464646;
+	font-weight:bold;
+    float: right;
+	text-align:left;
+	border-top:2px solid #d9d9d9;
+	border-left:2px solid #d9d9d9;
+    height: 22px;
+    min-width: 118px;
+    padding-left: 10px;
+    padding-top: 8px;
+}
+.textbox2{ border: 1px solid #E0E0E0;
+    box-shadow: 1px 1px 5px #E0E0E0 inset;
+    float: left;
+    height: 33px;
+    width: 144px;}
+
+.titlebox2 {
+   background:url(../images/repair/titleboxbg.jpg) repeat-x;
+    border: 1px solid #d9d9d9;
+	color:#8d8d8d;
+	font-size:11px;
+	display:table;
+	text-align:left;
+	border-top:2px solid #d9d9d9;
+	border-left:2px solid #d9d9d9;
+    height: 19px;
+    min-width: 30px;
+    padding-left: 10px;
+    padding-top: 4px;
+}
+.repairt strong, select, textbox,td{color:#464646;}
+.togbutton{float:right;
+		background:url(../images/repair/tooglebg.png) no-repeat center;
+		border:none;
+		width:23px;
+		height:22px;
+		margin-right:10px;
+}
+#cinfo{display:none;}
+#oinfo{display:none;}
+.repairtotal .textbox2{width:95px;}
+.titlebox3{
+	 background:url(../images/repair/titleboxbg.jpg) repeat-x;
+    border: 1px solid #d9d9d9;
+	color:#8d8d8d;
+	display:inline-block;
+	font-weight:bold;
+	text-align:left;
+	border-top:2px solid #d9d9d9;
+	border-left:2px solid #d9d9d9;
+    height: 23px;
+    min-width: 20px;
+    padding-left: 10px;
+    padding-top:9px;
+	background-color:#eeeeee;
+	}
+.ordertop{margin-bottom:10px;}
+#obinfo{display:none;}

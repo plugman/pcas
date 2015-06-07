@@ -1,0 +1,84 @@
+
+.container {
+   
+}
+.drag-image{
+}
+#bg, #bg > img{
+    position:absolute;
+    left:0px;
+    top:0px;
+    pointer-events:none;
+}
+#screen {
+    overflow:hidden;
+    width:310px;
+    height:490px;
+    clear:both;
+    position:absolute;
+    z-index:-1;
+}
+.left{float:left;
+width:50%;
+}
+.right{float:right;
+width:20%;
+}
+#dropbox{border: 1px solid #999;
+width:300px;
+height:300px;}
+.right img{
+	max-width:100px;
+	height:90px;
+}
+#slider{
+float:left;}
+div.design-template {
+    height: 560px;
+    opacity: 1;
+    position: relative;
+    transition-duration: 0.5s;
+    transition-property: opacity, border;
+    width: 282px;
+    z-index: 50;
+}
+div.design-template > div.placeholder {
+    -moz-box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid rgba(30, 30, 30, 0.05);
+    margin-left: -1px;
+    margin-top: -1px;
+    position: absolute;
+    transition-duration: 0.5s;
+    transition-property: opacity, border, background;
+}
+div.design-template .normal-grid {
+    height: 72px;
+    width: 72px;
+}
+div.design-template .big-grid {
+    height: 142px;
+    width: 142px;
+}
+div.design-template.over > div.placeholder {
+    border-color: #C1BEB9;
+    border-style: solid;
+    border-width: 1px;
+}
+div.design-template img.img-holder {
+    display: block;
+    opacity: 0;
+    transition-duration: 0.3s;
+    transition-property: opacity, border, background, box-shadow;
+}
+div.design-template div.img-holder {
+    display: block;
+    opacity: 0;
+    transition-duration: 0.3s;
+    transition-property: opacity, border, background, box-shadow;
+}
+div.design-template div.img-holder img {
+}
+div.design-template > div.placeholder:hover {
+    z-index: 50;
+}
