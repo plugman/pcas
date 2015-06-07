@@ -1,0 +1,1 @@
+[01-Mar-2013 13:04:19] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Too many connections in /home/faisal/public_html/classes/db/db.php on line 24
