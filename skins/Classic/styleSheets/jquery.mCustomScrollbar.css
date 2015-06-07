@@ -1,0 +1,15 @@
+@charset "utf-8";
+/* CSS Document */
+/* some custom fonts via google font api */
+
+/* content block 1 */
+#mcs_container{position:relative;  width:250px; height:300px;}
+#mcs_container .customScrollBox{position:relative; height:90%; overflow:hidden; float:left;}
+#mcs_container .customScrollBox .container{position:relative; width:240px; top:0; float:left;}
+#mcs_container .customScrollBox .content{clear:both;}
+#mcs_container .customScrollBox img{border:5px solid #fff;}
+#mcs_container .dragger_container{position:relative; width:2px; height:525px; float:left; margin:40px 0 0 10px; background:#000; cursor:pointer -moz-border-radius:2px; -khtml-border-radius:2px; -webkit-border-radius:2px; border-radius:2px; cursor:s-resize;}
+#mcs_container .dragger{position:absolute; width:2px; height:60px; background:#999; text-align:center; line-height:60px; color:#666; overflow:hidden; cursor:pointer; -moz-border-radius:2px; -khtml-border-radius:2px; -webkit-border-radius:2px; border-radius:2px;}
+#mcs_container .dragger_pressed{position:absolute; width:4px; margin-left:-1px; height:60px; background:#999; text-align:center; line-height:60px; color:#666; overflow:hidden; -moz-border-radius:4px; -khtml-border-radius:4px; -webkit-border-radius:4px; border-radius:4px; cursor:s-resize;}
+#mcs_container .scrollUpBtn,#mcs_container .scrollDownBtn{filter:alpha(opacity=80); -moz-opacity:0.80; -khtml-opacity:0.20; opacity:0.80; float:right; margin-right:5px;}
+#mcs_container .scrollUpBtn:hover,#mcs_container .scrollDownBtn:hover{filter:alpha(opacity=60); -moz-opacity:0.60; -khtml-opacity:0.60; opacity:0.90;}

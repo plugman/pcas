@@ -1,0 +1,186 @@
+
+#pageSurround {
+	width: 748px;
+	margin: 0px auto;
+	padding: 5px;
+	border: 2px solid #333333;
+	background-color: #FFFFFF;
+	/* SKIN VARIABLE IS cAsE SeNsItIvE */
+	background-image: url(../../../images/getLogo.php?skin=Classic);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;	
+}
+#topHeader {
+	text-align: right;
+	height: 36px;
+	margin-bottom: 25px;
+	padding-right: 0px;
+	padding-top: 30px;	
+}
+.boxTitleLeft, .boxTitleRight {
+	border-bottom: 1px solid #CCCCCC;
+    color: #25292C;
+    font-family: lucidaBold;
+    font-size: 18px;
+    line-height: 50px;
+    text-align: center;
+}
+.boxContentLeft, .boxContentRight {
+	line-height: 25px;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-top: 3px;
+}
+.colLeft {
+	position: relative;
+	z-index:5;
+	left: 0px;
+	width: 160px; 
+	padding-left: 15px;
+	padding-right: 5px;
+	float: left;
+}
+.colMid {
+	position: relative;
+	width: 403px;
+	float: left;
+}
+.colRight {
+	position: relative;
+	width: 160px; 
+	padding-left: 5px;
+	right: 0px;
+	float: right;
+}
+.boxContent {
+	border: 1px solid #d8d8d8;
+	padding: 10px;
+	color: #333333;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	float:left;
+	width:930px;
+	min-height:300px;}
+.boxContent2 {
+	border: 1px solid #d8d8d8;
+	padding: 10px;
+	color: #333333;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	float:left;
+	width:930px;
+	min-height:300px;}
+
+
+/* CHECKOUT PAGES */
+.colLeftCheckout {
+	position: relative;
+	left: 0px;
+	width: 160px; 
+	padding-left: 15px;
+	padding-right: 5px;
+	float: left;
+}
+.colMainCheckout {
+	position: relative;
+	width: 568px;
+	float: left;
+}
+/* END CHECK OUT PAGES */
+.siteDocs {
+	text-align:center;
+	margin-top: 10px;
+}
+
+#subCats {
+	text-align:justify;
+	background-color: #EBEDFE;
+	text-align: center;
+	border: 1px solid #C9CEFC;
+	margin: 0px;
+	padding: 3px;
+	float: left;
+	width: 387px;
+}
+.subCat {	
+	text-align: center;
+	padding: 8px;
+	float: left;
+	width: 110px;
+}
+.regSep{
+	padding: 10px 0px 10px 0px;
+	margin: 10px 0px 10px 0px;
+	border-top: 1px solid #cccccc;
+	border-bottom: 1px solid #cccccc;
+}
+#imgThumbSpace{
+	line-height: 0px;		
+}
+#imgThumbSpace img {
+	padding-right: 3px;
+	padding-bottom: 3px;		
+}
+
+div.latestProds {
+	text-align: center;
+	width: 131px;
+	height: 100px;
+	float: left;
+	overflow: hidden;
+}
+
+/*
+Start Cross-Browser DHTML Menu
+*/
+
+#mainmenu-nav {
+	list-style: none;
+	list-style-type: none;
+	padding: 0px;
+	margin: 0px;
+}
+
+.li-nav a {
+ 	color: #646464;
+    display: block;
+    padding: 0 8px;
+}
+.li-nav a:hover {
+	color: #0dadd5;
+
+}
+
+ .li-nav > ul {
+	display: block;
+	list-style: none;
+}
+
+.ul-nav {
+	width: 200px;
+	background:#fff;
+	border:1px solid #ccc;
+	
+}
+
+.li-nav {
+	position:relative;}
+
+.li-nav .ul-nav  {
+	display: none;
+	position: absolute;
+	top:0;
+	width:235px;
+	left:235px;
+}
+.li-nav:hover > ul{ display:block;}
+li.hassub{ background:url(../styleImages/arrow.jpg) no-repeat 96% center}
+a.hassubmenu {
+	background-image: url(../styleImages/more.gif);
+	background-repeat: no-repeat;
+	background-position: 143px 6px;
+}
+/*
+End Cross-Browser DHTML Menu
+*/

@@ -1,0 +1,32 @@
+<?php
+$lv = !$langBully ?  "lang" : "bully";
+${$lv}['viewOrder'] = array(
+'order_no' => "Order No:",
+'customer_info' => "Customer Info:",
+'invoice_address' => "Invoice Address:",
+'delivery_address' => "Delivery Address:",
+'na' => "n/a",
+'customer_comments' => "Customer Comments:",
+'order_summary' => "Order Summary:",
+'order_status' => "Order Status:",
+'product' => "Product",
+'product_code' => "Product Code",
+'quantity' => "Quantity",
+'price' => "Price",
+'download_here' => "Download Here",
+'review_below' => "Please review this order below:",
+'order_date_time' => "Order Date/Time:",
+'payment_method' => "Payment Method:",
+'ship_method' => "Shipping Method:",
+'courier_tracking' => 'Track this order',
+'subtotal' => "Subtotal:",
+'discount' => "Discount:",
+'paypall' => "Paypal precessing Fee:",
+'total_tax' => "Total Tax:",
+'shipping' => "Shipping:",
+'grand_total' => "Grand Total:",
+'order_not_found' => "That order number could not be found.",
+'login_required' => "You must login to view this page.",
+'make_payment' => "This order is currently &quot;Pending Payment&quot; if you have not already done so you can continue <a href='%1\$s' class='txtDefault'>complete payment</a> now. Once payment has been received your order will be fulfilled.",
+);
+?>

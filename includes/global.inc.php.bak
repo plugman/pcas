@@ -1,0 +1,14 @@
+<?php
+$glob['adminFile'] = 'admin.php';
+$glob['adminFolder'] = 'admin';
+$glob['dbdatabase'] = 'imeicart';
+$glob['dbhost'] = 'localhost';
+$glob['dbpassword'] = 'welcome';
+$glob['dbprefix'] = '';
+$glob['dbusername'] = 'imran';
+$glob['encoder'] = 'ioncube';
+$glob['installed'] = '1';
+$glob['license_key'] = '';
+$glob['rootRel'] = '/imeicart/';
+$glob['storeURL'] = 'http://localhost/imeicart';
+?>

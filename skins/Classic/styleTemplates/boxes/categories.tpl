@@ -1,0 +1,31 @@
+<!-- BEGIN: categories -->
+<div class="boxTitleLeft">{LANG_CATEGORY_TITLE}</div>
+<div class="boxContentLeft" style="padding: 0px;">
+	<ul id="mainmenu-nav">
+
+			<!-- BEGIN: a -->
+			<!-- BEGIN: ul_start -->
+			<ul class="ul-nav">
+				<!-- END: ul_start -->
+				<!-- BEGIN: li_start -->
+				<li class="li-nav">
+				<!-- END: li_start -->
+					<a href="index.php?_a=viewCat&amp;catId={DATA.cat_id}">{DATA.cat_name} ({DATA.noProducts})</a>
+				<!-- BEGIN: li_end -->
+				</li>
+				<!-- END: li_end -->
+				<!-- BEGIN: ul_end -->
+			</ul>
+		</li>
+		<!-- END: ul_end -->
+		<!-- END: a -->
+		
+		
+		
+		<!-- BEGIN: sale -->
+		<!--<li class="li-nav"> <a href="index.php?_a=mobileacces&amp;catId=saleItems" class="txtDefault">{LANG_SALE_ITEMS}</a></li>-->
+		<!-- END: sale -->
+	</ul>
+	<br clear="all" />
+</div>
+<!-- END: categories -->

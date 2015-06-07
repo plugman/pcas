@@ -1,0 +1,186 @@
+
+
+
+/* -------------
+ * Selects
+ * ------------- */
+.jqTransformSelectWrapper {
+	width: 116px;
+	position:relative;
+	height: 34px;
+	background: #fff;
+	border:1px solid #e2e1e1;
+	float:left;
+
+}
+.network .jqTransformSelectWrapper {
+	width: 268px ;
+}
+.soringorders  .jqTransformSelectWrapper{	margin-top:8px;}
+.kk .jqTransformSelectWrapper{z-index:11 !important;}
+
+.country .jqTransformSelectWrapper {
+	height:20px;
+	}
+.shoping .jqTransformSelectWrapper {
+	height:20px;
+	width:auto !important;
+	background:none;
+	border:none;
+	
+	display:inline;
+	float:right;
+}
+.country .jqTransformSelectWrapper  a.jqTransformSelectOpen {
+	height:20px;
+	width:25px;
+}
+.shoping .jqTransformSelectWrapper  a.jqTransformSelectOpen {
+	background:url(../styleImages/aero.jpg) no-repeat right;
+	width:5px;
+	height:7px;
+	float:right;
+	top:7px;
+	
+}
+.shoping .jqTransformSelectWrapper div span {
+	height:20px;
+	width:auto !important;
+	color:#9E9D9D;
+	padding:6px 10px 0 5px;
+	float:left;
+	text-align:left;
+	
+	
+	position:inherit;}
+.shoping .jqTransformSelectWrapper ul li{ min-width:60px;}
+.shoping .jqTransformSelectWrapper ul{background:#000;}
+.shoping .jqTransformSelectWrapper div span:hover{color:#FDD831;}
+.country .jqTransformSelectWrapper div span {
+	padding: 3px 0 0 7px;}
+.country .jqTransformSelectWrapper ul {
+	top:21px;
+}
+	
+.jqTransformSelectWrapper div span {
+	
+	font-size: 12px;
+	float: none;
+	position: absolute;
+	white-space: nowrap;
+	height: 31px;
+	line-height: 15px;
+	padding: 8px 0 0 7px;
+	overflow: hidden;
+	cursor:pointer;
+	/*border: 1px solid #CCCCCC;*/
+/*	border-right: none;*/
+}
+.jqTransformSelectWrapper div span {
+	color:#000;
+}
+.jqTransformSelectWrapper  a.jqTransformSelectOpen {
+	display: block;
+	position: absolute;
+	right: 0px;
+	width: 29px;
+	height: 34px;
+	background: url(../styleImages/select_right.gif) no-repeat center center;
+}
+.soringorders .jqTransformSelectWrapper  a.jqTransformSelectOpen {
+	display: block;
+	position: absolute;
+	right: 0px;
+	width: 29px;
+	height: 34px;
+	background: url(../styleImages/select_right.gif) no-repeat center center;
+}
+.shoping .jqTransformSelectWrapper ul {
+	border:none;
+	background-color:#282828;
+	text-align:left;
+	color:#adadad}
+.jqTransformSelectWrapper ul {
+	position: absolute;
+	top: 30px;
+	left: 0px;
+	list-style: none;
+	background-color: #282828;
+	border: solid 1px #CCC;
+	display: none;
+	margin: 0px;
+	padding: 0px;
+	height: 150px;
+	
+	overflow-y: auto;
+	
+}
+.soringorders .jqTransformSelectWrapper ul {
+	position: absolute;
+	top: 30px;
+	line-height:20px;
+	left: 0px;
+	list-style: none;
+	background-color: #fff;
+	border: solid 1px #CCC;
+	display: none;
+	margin: 0px;
+	padding: 0px;
+	height: 150px;
+	
+	overflow-y: auto;
+	
+}
+.jqTransformSelectWrapper ul a {
+	
+	padding: 5px;
+	text-decoration: none;
+	color:#282828;
+	background-color:#fff;
+	background:url(../styleImages/ulbg.jpg) repeat-y right;
+	border-bottom:1px dashed #CCC;
+	font-size: 12px;
+	
+}
+.soringorders .jqTransformSelectWrapper ul a {
+	text-decoration: none;
+	color:#000;
+	border-bottom:none;
+	background:none;
+	background-color:#fff;
+	font-size: 12px;
+	display:block;
+	
+}
+.shoping .jqTransformSelectWrapper ul a {
+	color:#9E9D9D;
+	background:none;
+	padding:0 12px 0 5px;
+	background-color:#282828;
+	border-bottom:none;}
+
+.jqTransformSelectWrapper ul a.selected {
+	background:url(../styleImages/ulbg.jpg) repeat-y right;
+	color: #333;
+}
+.soringorders .jqTransformSelectWrapper ul a.selected {
+	color: #adadad;
+	background:none;
+}
+.shoping .jqTransformSelectWrapper ul a.selected {
+	background:#282828 !important;
+	background-color:#282828;
+		color: #9E9D9D;
+}
+.jqTransformSelectWrapper ul a:hover, .jqTransformSelectWrapper ul a.selected:hover {
+	background:#000000;
+	color: #fdd831;
+}
+.soringorders .jqTransformSelectWrapper ul a:hover, .jqTransformSelectWrapper ul a.selected:hover {
+	background:#EEEEEE;
+	color: #000;
+}
+/* -------------
+ * Hidden - used to hide the original form elements
+ * ------------- */
+.jqTransformHidden {display: none;}

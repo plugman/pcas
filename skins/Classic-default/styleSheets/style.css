@@ -1,0 +1,330 @@
+html, body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+}
+
+img {
+	border: none;
+}
+
+.cart_icon {
+	border: none;
+	margin: 12px 0px;
+}
+
+.searchBtn {
+	color: #FFFFFF;
+	background-color: #666666;
+	border: 1px solid #666666;
+	height: 20px;
+	width: 30px;
+	font-size: 11px;
+}
+.searchBox {
+	color: #666666;
+	background-color: #FFFFFF;
+	border: 1px solid #666666;
+	font-size: 11px;
+}
+.textbox {
+	background-color: #E0F0FF;
+	border: 1px solid #000000;
+	font-size: 11px;
+	color: #000000;
+}
+.textboxDisabled {
+	background-color: #E0F0FF;
+	border: 1px dashed #000000;
+	font-size: 11px;
+	color: #000000;
+
+}
+.submit {	
+	color: #FFFFFF;
+	background-color: #070F72;
+	border: 1px black solid;
+	/* height: 18px; */
+	/* font-weight: bold; */
+	font-size: 11px;
+}
+form {
+	margin: 0px;
+	padding: 0px;
+}
+
+ol, ul {
+	margin: 0px;
+	padding: 0px;
+	color: #000000;	
+}
+li {
+	list-style-position: inside;
+	margin: 0px;
+	padding: 0px;
+}
+li.bullet {
+	list-style-type: square;
+}
+li.bulletLrg {
+	list-style-type: square;
+	font-size: 14px;
+}
+
+li.num {
+	color: #000000;		
+}
+li.account {
+	list-style-type: square;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.txtSession, .txtCopy, .txtSiteDocs {
+	color: #333333;
+}
+a.txtSession, a.txtSiteDocs {
+	color: #031074;
+	text-decoration: none;
+}
+a.txtSession:hover, a.txtSiteDocs:hover {
+	color: #031074;
+	text-decoration: underline;
+}
+a.txtButton {
+	font-weight: bold;
+	color: #FFFFFF;
+	background-color: #070F72;
+	padding: 2px;
+	line-height: 20px;
+	text-align: center;
+	text-decoration: none;
+}
+a.txtButton:hover {
+	font-weight: bold;
+	color: #FFFFFF;
+	background-color: #FF9900;
+	padding: 2px;
+	line-height: 20px;
+	text-align: center;
+	text-decoration: none;
+}
+
+.txtOldPrice {
+	text-decoration: line-through;
+}
+.txtSale {
+ 	color: #FF0000;
+}
+.txtOutOfStock {
+	color: #FF0000;
+}
+.txtSiteDocs, a.txtSiteDocs {
+	color: #333333;
+	text-decoration:none;
+}
+a.txtSiteDocs:hover {
+	color: #FF6600;
+	text-decoration:none;
+}
+.txtDefault, a.txtDefault, a.txtLink, a.txtLocation {
+	color: #070F72;
+	text-decoration:none;
+}
+a.txtDefault:hover, a.txtLink:hover, a.txtLocation:hover {
+	color: #FF6600;
+	text-decoration:none;
+}
+a.txtSelected:hover, a.txtSelected:active, a.txtSelected:link, a.txtSelected:visited {
+	color: #FF6600;
+	text-decoration:none;
+}
+.txtContentTitle {
+	font-size: 14px;
+	font-weight: bold;
+	color: #0672CC;
+}
+.txtBoxSave {
+	color: #F90707;
+	padding-left: 16px;
+}
+.tblList {
+	border: 1px solid #070F72;
+}
+.tdListTitle {
+	background-color: #070F72;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+.tdEven {
+	background-color: #FFFFFF;
+}
+.tdOdd {
+	background-color: #EBEDFE;
+}
+.txtCartPrice {
+	float: right;
+	color: #FF0000;
+	padding-right: 3px;
+}
+.txtCart {
+	color: #000000;	
+}
+.cartTotal {
+	border-top: 1px dashed #070F72;
+	width: 153px;
+	padding-top: 2px;
+	margin-top: 3px;
+}
+a.txtCartProduct:active, a.txtCartProduct:link, a.txtCartProduct:visited {
+	text-decoration: none;
+	color: #000000;
+}
+a.txtCartProduct:hover {
+	text-decoration: none;
+	color: #FF6600;
+}
+a.txtviewCart:active, a.txtviewCart:link, a.txtviewCart:visited {
+	font-weight: bold;
+	color: #FFFFFF;
+	background-color: #FF9900;
+	text-decoration: none;
+	font-weight: bold;
+	padding: 2px;
+	border: 1px solid #000000;
+}
+a.txtviewCart:hover {
+	background-color: #66CC33;
+	color: #FFFFFF;
+}
+a.flashBasket:active, a.flashBasket:link, a.flashBasket:visited, a.flashBasket:hover {
+	font-weight: bold;
+	color: #FFFFFF;
+	background-color: #66CC33;
+	text-decoration: none;
+	font-weight: bold;
+	padding: 2px;
+	border: 1px solid #000000;
+}
+.cartProgress {
+	font-weight: normal;
+	color: #666666;
+	padding: 4px;
+	border: 1px solid #CCCCCC;
+	width: 350px;
+	margin: auto;
+}
+.txtcartProgressCurrent {
+	color: #FF9900;
+	font-weight: bold;
+}
+.quickBuy {
+	text-align: center;
+	color: #666666;
+}
+.tdcartTitle {
+	font-weight: bold;
+	color: #FFFFFF;
+	background-color: #999999;
+	border-bottom: 1px solid #666666;
+}
+.tdcartEven {
+	background-color: #EBEDFE;	
+}
+.tdcartOdd {
+	background-color: #FFFFFF;
+}
+.tdCartSubTotal {
+	padding-top: 10px;
+	border-top: 1px solid #666666;
+}
+a.txtCheckout {
+	font-weight: bold;
+	color: #FFFFFF;
+	background-color: #66CC33;
+	text-decoration: none;
+	font-weight: bold;
+	padding: 2px;
+	border: 1px solid #000000;
+}
+a.txtUpdate {
+	font-weight: bold;
+	color: #FFFFFF;
+	background-color: #FF9900;
+	text-decoration: none;
+	padding: 2px;
+	border: 1px solid #000000;
+}
+.txtStockWarn {
+	color: #FF0000;
+}
+.txtError {
+	font-weight: bold;
+	color: #050F72;
+	background-color: #FFCECE;
+	border: 1px solid #FF0000;
+	padding: 2px;
+}
+.txtCopyright, a.txtCopyright {
+	text-align: center;
+	/*font-size: 11px;*/
+	padding-top: 5px;
+	color: #000000;
+}
+a.txtCopyright:hover {
+	text-decoration: none;
+}
+.dropDown {
+	width: 120px;
+}
+.addCoupon:hover, .addCoupon:active, .addCoupon:visited, .addCoupon:link  {
+	font-weight: bold;
+	color: #000000;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.RatingTop {
+	border-top: 1px solid #070F72;
+	border-right: 1px solid #070F72;
+	border-left: 1px solid #070F72;
+	background-color: #EBEDFE;
+	padding: 3px;
+}
+
+.RatingMain {
+	border-right: 1px solid #070F72;
+	border-left: 1px solid #070F72;
+	background-color: #EBEDFE;
+	padding: 3px;
+	font-style:italic;
+}
+
+.ReviewBot {
+	border-right: 1px solid #070F72;
+	border-left: 1px solid #070F72;
+	background-color: #EBEDFE;
+	padding: 3px;
+	border-bottom: 1px solid #070F72;
+}
+
+.RatingBottom {
+	background-color: #070F72;
+	padding: 3px;
+	border-right: 1px solid #070F72;
+	border-left: 1px solid #070F72;
+	color: #FFFFFF;
+	/*font-size: 11px;*/
+}
+
+a.sortLink {
+	color: #FFFFFF;
+	font-weight: bold;
+	text-decoration: none;
+}
+a.sortLink:hover {
+	text-decoration: underline;
+}
+
+#shipping-select {
+	width: 220px;
+}

@@ -1,0 +1,14 @@
+<?php
+$glob['adminFile'] = 'admin.php';
+$glob['adminFolder'] = 'admin';
+$glob['dbdatabase'] = 'imeiunlock';
+$glob['dbhost'] = 'localhost';
+$glob['dbpassword'] = '';
+$glob['dbprefix'] = '';
+$glob['dbusername'] = 'root';
+$glob['encoder'] = 'zend';
+$glob['installed'] = '1';
+$glob['license_key'] = '';
+$glob['rootRel'] = '/imeiunlock/';
+$glob['storeURL'] = 'http://localhost/imeiunlock';
+?>

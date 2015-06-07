@@ -1,0 +1,159 @@
+<IfModule mod_security.c>
+SecFilterEngine Off
+SecFilterScanPOST Off
+</IfModule>
+ <IfModule mod_headers.c>
+   Header set Access-Control-Allow-Origin "*"
+ </IfModule>
+<IfModule mod_deflate.c>
+    #The following line is enough for .js and .css
+    AddOutputFilter DEFLATE js css
+    AddOutputFilterByType DEFLATE text/plain text/xml application/xhtml+xml text/css application/xml application/rss+xml application/atom_xml application/x-javascript application/x-httpd-php application/x-httpd-fastphp text/html
+ 
+    #The following lines are to avoid bugs with some browsers
+    BrowserMatch ^Mozilla/4 gzip-only-text/html
+    BrowserMatch ^Mozilla/4\.0[678] no-gzip
+    BrowserMatch \bMSIE !no-gzip !gzip-only-text/html 
+</IfModule>
+
+ 
+<IfModule mod_headers.c>
+    <FilesMatch "\.(js|css|xml|gz)$">
+        Header append Vary Accept-Encoding
+    </FilesMatch>
+    <FilesMatch "\.(ico|jpe?g|png|gif|swf)$">  
+        Header set Cache-Control "public"  
+    </FilesMatch>  
+    <FilesMatch "\.(css)$">  
+        Header set Cache-Control "public"  
+    </FilesMatch>  
+    <FilesMatch "\.(js)$">  
+        Header set Cache-Control "private"  
+    </FilesMatch>  
+    <FilesMatch "\.(x?html?|php)$">  
+        Header set Cache-Control "private, must-revalidate"  
+    </FilesMatch>
+</IfModule>
+
+# -----------------------------------------------------------------------
+# Defining MIME types to ensure the web server actually knows about them.
+# -----------------------------------------------------------------------
+<IfModule mod_mime.c>
+    AddType application/javascript          js
+    AddType application/vnd.ms-fontobject   eot
+    AddType application/x-font-ttf          ttf ttc
+    AddType font/opentype                   otf
+    AddType application/x-font-woff         woff
+    AddType image/svg+xml                   svg svgz 
+    AddEncoding gzip                        svgz
+</Ifmodule>
+
+# -----------------------------------------------------------------------
+# Compressing output.
+# -----------------------------------------------------------------------
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/plain text/css application/json
+    AddOutputFilterByType DEFLATE application/javascript
+    AddOutputFilterByType DEFLATE text/xml application/xml text/x-component
+    AddOutputFilterByType DEFLATE application/xhtml+xml application/rss+xml application/atom+xml
+    AddOutputFilterByType DEFLATE image/x-icon image/svg+xml application/vnd.ms-fontobject application/x-font-ttf font/opentype
+</Ifmodule>
+
+
+## Activate the mod_rewrite Engine
+
+RewriteEngine On
+RewriteCond %{QUERY_STRING} (.*)$
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule MobileAccessories(\.[a-z]+)?(\?.*)?$	index.php?_a=viewCat&%1 [NC]
+
+RewriteEngine On
+RewriteCond %{QUERY_STRING} (.*)$
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule cat_([0-9]+)(\.[a-z]{3,4})?(.*)$	index.php?_a=viewCat&catId=$1&%1 [NC]
+
+RewriteCond %{QUERY_STRING} (.*)$
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule prod_([0-9]+)(\.[a-z]{3,4})?$		index.php?_a=viewProd&productId=$1&%1 [NC]
+
+RewriteCond %{QUERY_STRING} (.*)$
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule info_([0-9]+)(\.[a-z]{3,4})?$		index.php?_a=viewDoc&docId=$1&%1 [NC]
+
+RewriteCond %{QUERY_STRING} (.*)$
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule model_([0-9]+)(\.[a-z]{3,4})?$		index.php?_a=casecustomization&modelId=$1&%1 [NC]
+
+RewriteCond %{QUERY_STRING} (.*)$
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule tell_([0-9]+)(\.[a-z]{3,4})?$		index.php?_a=tellafriend&productId=$1&%1 [NC]
+
+RewriteCond %{QUERY_STRING} (.*)$
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule _saleItems(\.[a-z]+)?(\?.*)?$		index.php?_a=viewCat&catId=saleItems&%1 [NC,L]
+
+RewriteCond %{QUERY_STRING} (.*)$
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule Balance.html	index.php?_a=topupBalance [NC]
+RewriteRule Profile.html	index.php?_a=profile [NC]
+RewriteRule Contact-Us.html	index.php?_a=contactus&docId=21 [NC]
+RewriteRule YourAccount.html	index.php?_a=profile [NC]
+RewriteRule Orders.html	index.php?_g=co&_a=viewOrders [NC]
+RewriteRule NewsLetter.html	index.php?_a=newsletter [NC]
+RewriteRule AvailableNetworks.html	index.php?_a=viewUnlocks [NC]
+RewriteCond %{QUERY_STRING} (.*)$
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule OrderNow.html		index.php?_a=viewProd&productId=$1&%1 [NC]
+RewriteRule ChangePassword.html	index.php?_a=changePass [NC]
+RewriteRule BulckOrder.html	index.php?_a=viewDoc&docId=2 [NC]
+RewriteRule How-To-Unlock.html	index.php?_a=viewDoc&docId=17 [NC]
+RewriteRule Testimonials.html	index.php?_a=testimonials [NC]
+RewriteRule Logout.html	index.php?_a=logout [NC]
+RewriteRule Order-Lookup.html	index.php?_a=orderlookup [NC]
+RewriteRule Login.html	index.php?_a=login [NC]
+RewriteRule Register.html	index.php?_a=reg [NC]
+RewriteRule Faqs.html	index.php?_a=viewFaq [NC]
+RewriteRule SiteMap.html	index.php?_a=sitemap [NC]
+RewriteRule Other-Networks.html	index.php?_a=viewother [NC]
+RewriteRule ForgotPassword.html	index.php?_a=forgotPass [NC]
+RewriteRule CaseCustomization.html	index.php?_a=casecustomization [NC]
+RewriteRule Gallery.html	index.php?_a=gallery [NC]
+RewriteRule Social.html	index.php?_a=social [NC]
+RewriteRule Cart.html	index.php?_g=co&_a=cart [NC]
+RewriteCond %{QUERY_STRING} (.*)$
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule product_([0-9]+)(\.[a-z]{3,4})?$		index.php?_a=product&productId=$1&%1 [NC]
+
+RewriteRule index.php?_g=co&_a=step1	index.php [NC]
+
+# BEGIN REQUIRED FOR WEBFONTS
+
+AddType font/ttf .ttf
+AddType font/eot .eot
+AddType font/otf .otf
+AddType font/woff .woff
+
+<FilesMatch "\.(ttf|otf|eot|woff)$">
+    <IfModule mod_headers.c>
+        Header set Access-Control-Allow-Origin "*"
+    </IfModule>
+</FilesMatch>
+
+# END REQUIRED FOR WEBFONTS
+RewriteRule Repair.html	index.php?_a=repair [NC]
+
+RewriteCond %{QUERY_STRING} (.*)$
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule Repair_Contact_([0-9]+)(\.[a-z]{3,4})?$		index.php?_a=repair&rcontact=$1&%1 [NC]
+
+RewriteCond %{QUERY_STRING} (.*)$
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule problem_([0-9]+)(\.[a-z]{3,4})?$		index.php?_a=repair&productId=$1&%1 [NC]
+
+RewriteCond %{QUERY_STRING} (.*)$
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule mail_in_([0-9]+)(\.[a-z]{3,4})?$		index.php?_a=repair&mail_in=$1&%1 [NC]
+
+RewriteCond %{QUERY_STRING} (.*)$
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule procedure_([0-9]+)(\.[a-z]{3,4})?$		index.php?_a=repair&procedure=$1&%1 [NC]

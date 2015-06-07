@@ -1,0 +1,43 @@
+<?php
+$lv = !$langBully ?  "lang" : "bully";
+${$lv}['admin'] = array(
+'shipping_alt_shipping_title' => "M&eacute;todos de envio para M&oacute;dulos de Checkout Alternativos",
+'shipping_updated_success' => "M&eacute;todo de envio `%1\$s` actualizado com sucesso.",
+'shipping_update_fail' => "M&eacute;todo de envio `%1\$s` n&atilde;o foi actualizado.",
+'shipping_add_success' => "M&eacute;todo de envio `%1\$s` adicionado com sucesso.",
+'shipping_add_fail' => "M&eacute;todo de envio `%1\$s` n&atilde;o foi adicionado.",
+'shipping_name' => "Nome de Envio",
+'shipping_sort_order' => "Ordenar Encomenda",
+'shipping_status' => "Estado",
+'shipping_byprice' => "Por Peso/Pre&ccedil;o",
+'shipping_global' => "Global",
+'shipping_notes' => "Notas",
+'shipping_action' => "Ac&ccedil;&atilde;o",
+'shipping_price' => "Pre&ccedil;o",
+'shipping_weight' => "Peso",
+'shipping_set_prices' => "Definir Pre&ccedil;os",
+'shipping_no_alt_shipping' => "N&atilde;o foram criados m&eacute;todos de envio alternativos.",
+'shipping_by_weight' => "Por Peso",
+'shipping_by_price' => "Por Pre&ccedil;o",
+'shipping_use_global' => "Usar no checkout normal &amp; alternativo.",
+'shipping_use_global_false' => "Usar apenas no checkout alternativo.",
+'shipping_alt_ship_prices_title' => "Pre&ccedil;os de Envio Alternativo para",
+'shipping_alt_ship_method' => "&quot;%1\$s&quot; foi definido para ter envio %2\$s. [<a href='%3\$s' class='txtLink'>Alterar</a>]",
+'shipping_alt_ship_updated_success' => "Pre&ccedil;o de envio actualizado com sucesso.",
+'shipping_alt_ship_update_fail' => "Pre&ccedil;o de envio n&atilde;o foi actualizado.",
+'shipping_alt_ship_add_success' => "Pre&ccedil;o de envio adicionado com sucesso.",
+'shipping_alt_ship_add_fail' => "Pre&ccedil;o de envio n&atilde;o foi adicionado.",
+'shipping_alt_ship_home' => "Regressar &agrave; P&aacute;gina Inicial de Envio Alternativo",
+'shipping_alt_ship_delete_success' => "Pre&ccedil;o de envio apagado com sucesso.",
+'shipping_alt_ship_delete_fail' => "Pre&ccedil;o de envio n&atilde;o foi apagado.",
+'shipping_alt_ship_low' => "Baixo (%1\$s)",
+'shipping_alt_ship_high' => "Elevado (%1\$s)",
+'shipping_alt_cost_to_cust' => "Custo para o Cliente",
+'shipping_alt_no_prices_set' => "Ainda n&atilde;o foram definidos pre&ccedil;os.",
+'shipping_alt_cost_submit' => "custo de envio",
+'shipping_ship_delete_success' => "M&eacute;todo de envio apagado com sucesso.",
+'shipping_ship_delete_fail' => "M&eacute;todo de envio n&atilde;o foi apagado.",
+'shipping_alt_delete_warning' => "Tem a certeza que quer continuar? Todos os pre&ccedil;os de envio relacionados ser&atilde;o igualmente apagados."
+);
+?>
+

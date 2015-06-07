@@ -1,0 +1,1 @@
+a:6:{s:4:"type";s:8:"shipping";s:4:"name";s:14:"Australia Post";s:7:"version";s:3:"1.0";s:11:"description";s:54:"Shipping Cost calculator for Australian Postal Service";s:6:"author";s:13:"Devellion Ltd";s:3:"url";s:0:"";}

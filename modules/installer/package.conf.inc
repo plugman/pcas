@@ -1,0 +1,1 @@
+a:4:{s:4:"type";s:9:"installer";s:4:"name";s:17:"Package Installer";s:7:"version";d:2;s:11:"description";s:41:"Package Installer module for ImeiUnlock 4.0";}
